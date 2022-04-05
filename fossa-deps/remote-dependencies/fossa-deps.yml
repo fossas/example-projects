@@ -1,0 +1,7 @@
+remote-dependencies:
+  - name: Hello-Remote
+    version: 1.0.0.2 
+    url: https://hackage.haskell.org/package/hello-1.0.0.2/hello-1.0.0.2.tar.gz
+    metadata:
+      homepage: https://hackage.haskell.org/package/hello
+      description: A simple Haskell dep

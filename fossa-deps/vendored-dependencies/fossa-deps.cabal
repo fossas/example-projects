@@ -1,0 +1,18 @@
+cabal-version:      2.4
+name:               fossa-deps
+version:            0.1.0.0
+
+synopsis: An example project demonstrating fossa-deps.yaml
+
+-- The license under which the package is released.
+license: MIT
+
+executable fossa-deps
+    main-is:          Main.hs
+
+    build-depends:
+        base ^>=4.14.3.0,
+        haskell-say == 1.0.0.0
+
+    hs-source-dirs:   app
+    default-language: Haskell2010

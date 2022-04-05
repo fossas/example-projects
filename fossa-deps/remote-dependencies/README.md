@@ -1,0 +1,1 @@
+This project serves as a simple example of having a remote dependency configured via [`fossa-deps.yml`](fossa-deps.yml).

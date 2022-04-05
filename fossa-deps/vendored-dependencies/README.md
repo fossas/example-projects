@@ -1,0 +1,1 @@
+This project serves as a simple example of having a vendored dependency configured via [`fossa-deps.yml`](fossa-deps.yml).  The dependency in question is `vendor/hello-1.0.0.2.tar.gz`.
