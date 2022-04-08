@@ -1,0 +1,4 @@
+vendored-dependencies:
+  - name: Hello-Vendored-Unarchived
+    path: vendor/hello-1.0.0.2
+    version: 1.0.0.2
