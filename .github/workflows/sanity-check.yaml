@@ -1,0 +1,10 @@
+name: "Test"
+on: [pull_request]
+
+jobs:
+  check-container-scanning-examples:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Ensure example docker images can be built
+        run: make build-images
