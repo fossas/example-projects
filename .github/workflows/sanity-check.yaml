@@ -1,6 +1,9 @@
 name: "Test"
 on: [pull_request]
 
+env:
+  DOCKER_BUILDKIT: 1
+
 jobs:
   check-container-scanning-examples:
     runs-on: ubuntu-latest
