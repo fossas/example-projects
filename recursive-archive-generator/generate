@@ -1,14 +1,16 @@
 #!/bin/bash
+WORKING_DIR=`pwd`
+echo "WORKING_DIR = $WORKING_DIR"
+
+# Make the files
 rm -rf recursive-archive
 mkdir -p recursive-archive/vendor/foo/bar/baz
-WORKING_DIR=`pwd`
-
-echo "WORKING_DIR = $WORKING_DIR"
-# Make the files
-cp MIT_LICENSE recursive-archive/vendor/foo/bar/baz/LICENSE
+cp MIT_LICENSE recursive-archive/vendor/foo/bar/baz/SOMETHING_LICENSE
 cp apache_licensed_codefile.rb recursive-archive/vendor/foo/bar/baz/something.rb
-cp apache_licensed_codefile.rb recursive-archive/vendor/foo/bar
+cp apache_licensed_codefile.rb recursive-archive/vendor/foo/bar/bar_apache.rb
 cp MIT_LICENSE recursive-archive/vendor/foo/bar
+# The UUID gives us a different directory hash every time we generate
+uuidgen > recursive-archive/vendor/foo/VERSION
 
 # output the file-tree before tarring things up
 echo "un-archived directory structure: "

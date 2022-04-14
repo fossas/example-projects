@@ -1,4 +1,3 @@
 vendored-dependencies:
   - name: recursive-archive-3
     path: vendor/foo.tar.gz
-    version: 1.0.0.1
