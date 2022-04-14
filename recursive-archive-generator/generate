@@ -1,0 +1,44 @@
+#!/bin/bash
+rm -rf recursive-archive
+mkdir -p recursive-archive/vendor/foo/bar/baz
+WORKING_DIR=`pwd`
+
+echo "WORKING_DIR = $WORKING_DIR"
+# Make the files
+cp MIT_LICENSE recursive-archive/vendor/foo/bar/baz/LICENSE
+cp apache_licensed_codefile.rb recursive-archive/vendor/foo/bar/baz/something.rb
+cp apache_licensed_codefile.rb recursive-archive/vendor/foo/bar
+cp MIT_LICENSE recursive-archive/vendor/foo/bar
+
+# output the file-tree before tarring things up
+echo "un-archived directory structure: "
+tree recursive-archive
+
+# create foo/bar/baz.tar.gz archive
+cd recursive-archive/vendor/foo/bar
+tar zcf baz.tar.gz baz
+rm -rf baz
+cd $WORKING_DIR
+echo "after creating foo/bar/baz.tar.gz"
+tree recursive-archive
+
+# create foo/bar.tar.gz archive
+cd recursive-archive/vendor/foo
+tar zcf bar.tar.gz bar
+rm -rf bar
+cd $WORKING_DIR
+echo "after creating foo/bar.tar.gz"
+tree recursive-archive
+
+# create foo.tar.gz archive
+cd recursive-archive/vendor
+tar zcf foo.tar.gz foo
+rm -rf foo
+cd $WORKING_DIR
+
+# copy in fossa-deps.yml
+cp fossa-deps.yml recursive-archive
+
+echo
+echo "post-archiving directory structure: "
+tree recursive-archive
