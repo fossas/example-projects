@@ -4,7 +4,8 @@ echo "WORKING_DIR = $WORKING_DIR"
 
 # Make the files
 rm -rf recursive-archive
-mkdir -p recursive-archive/vendor/foo/bar/baz
+mkdir -p recursive-archive/vendor/foo/bar/baz/quux
+cp MIT_LICENSE recursive-archive/vendor/foo/bar/baz/quux/QUUX_LICENSE
 cp MIT_LICENSE recursive-archive/vendor/foo/bar/baz/SOMETHING_LICENSE
 cp apache_licensed_codefile.rb recursive-archive/vendor/foo/bar/baz/something.rb
 cp apache_licensed_codefile.rb recursive-archive/vendor/foo/bar/bar_apache.rb
@@ -14,6 +15,14 @@ uuidgen > recursive-archive/vendor/foo/VERSION
 
 # output the file-tree before tarring things up
 echo "un-archived directory structure: "
+tree recursive-archive
+
+# create the foo/bar/baz/quux.tar.gz archive
+cd recursive-archive/vendor/foo/bar/baz
+tar zcf quux.tar.gz quux
+rm -rf quux
+cd $WORKING_DIR
+echo "after creating foo/bar/baz/quux.tar.gz"
 tree recursive-archive
 
 # create foo/bar/baz.tar.gz archive
