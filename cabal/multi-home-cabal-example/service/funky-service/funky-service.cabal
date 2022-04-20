@@ -1,0 +1,88 @@
+cabal-version: 2.2
+name: funky-service
+version: 0.0.1
+build-type: Simple
+
+common globals
+  ghc-options:
+    -Wall
+    -Werror
+    -Wredundant-constraints
+    -fhide-source-paths
+    -Wpartial-fields
+
+  default-language:
+    Haskell2010
+
+  default-extensions:
+    NoImplicitPrelude
+    OverloadedStrings
+
+common app-globals
+  ghc-options:
+    -Wall
+    -Werror
+    -Wredundant-constraints
+    -Wpartial-fields
+    -fhide-source-paths
+    -threaded
+    -rtsopts
+    -with-rtsopts=+RTS
+    -with-rtsopts=-T
+    -O2
+
+  default-extensions:
+    NoImplicitPrelude
+    OverloadedStrings
+
+  build-depends:
+    , awesome-prelude
+    , funky-service
+
+    , base < 5
+
+  hs-source-dirs:
+    app
+
+  default-language:
+    Haskell2010
+
+library
+  import:
+    globals
+  hs-source-dirs:
+    src
+  exposed-modules:
+    Funky
+  build-depends:
+    , awesome-prelude
+    , gnarly-library
+
+    , base < 5
+
+test-suite funky-service-tests
+  import:
+    globals
+  ghc-options:
+    -threaded
+  type:
+    exitcode-stdio-1.0
+  main-is:
+    Main.hs
+  default-extensions:
+    TemplateHaskell
+  hs-source-dirs:
+    test
+  build-depends:
+    , awesome-prelude
+    , funky-service
+
+    , base < 5
+    , hedgehog
+    , hedgehog-golden
+
+executable funky-service
+  import:
+    app-globals
+  main-is:
+    Main.hs

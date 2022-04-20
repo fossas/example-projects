@@ -1,0 +1,11 @@
+packages:
+  lib/awesome-prelude
+  lib/gnarly-library
+
+packages:
+  service/funky-service
+
+source-repository-package
+  type: git
+  location: https://github.com/felixmulder/hedgehog-golden
+  tag: 9d79ccf2fa656735199f4eec17d3205c77ba2e89
