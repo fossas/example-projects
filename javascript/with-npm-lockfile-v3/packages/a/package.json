@@ -10,7 +10,7 @@
         "aws-sdk": "1.0.0",
         "commander": "9.2.0"
     },
-    "author": "",
-    "license": "ISC"
+    "author": "fossa",
+    "license": "MIT"
   }
   
