@@ -1,0 +1,26 @@
+{
+    "name": "lockv3",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "devDependencies": {
+        "mocha": "*"
+    },
+    "peerDependencies": {
+        "chalk": "*"
+    },
+    "workspaces": [
+        "packages/a"
+    ],
+    "dependencies": {
+        "2": "^3.0.0",
+        "3": "^2.1.0",
+        "aws-sdk": "^2.0.0",
+        "express": "github:visionmedia/express",
+        "react": "^18.1.0"
+    },
+    "author": "fossa",
+    "license": "MIT"
+}
