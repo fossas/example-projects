@@ -1,0 +1,5 @@
+vendored-dependencies:
+  - name: first-dir-aaa11
+    path: first-dir
+  - name: second-dir-aaa11
+    path: second-dir
