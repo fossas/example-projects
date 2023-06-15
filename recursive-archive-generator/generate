@@ -1,7 +1,7 @@
 #!/bin/bash
 # Generate a recursive archive to test with
 # ./generate will generate a recursive archive
-# ./generate --include-targes will add a package.json and a pom.xml to the archives
+# ./generate --include-targets will add a package.json and a pom.xml to the archives
 # ./generate --skip-archiving will just create the directory structure, but skip the archiving
 
 WORKING_DIR=`pwd`
