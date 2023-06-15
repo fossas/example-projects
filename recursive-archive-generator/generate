@@ -2,6 +2,12 @@
 WORKING_DIR=`pwd`
 echo "WORKING_DIR = $WORKING_DIR"
 
+include_targets="false"
+if [[ "$1" == "--include-targets" ]]; then
+  echo "Including targets (copies a package.json and a pom.xml into the archives)"
+  include_targets="true"
+fi
+
 # Make the files
 rm -rf recursive-archive
 mkdir -p recursive-archive/vendor/foo/bar/baz/quux
@@ -10,6 +16,10 @@ cp MIT_LICENSE recursive-archive/vendor/foo/bar/baz/SOMETHING_LICENSE
 cp apache_licensed_codefile.rb recursive-archive/vendor/foo/bar/baz/something.rb
 cp apache_licensed_codefile.rb recursive-archive/vendor/foo/bar/bar_apache.rb
 cp MIT_LICENSE recursive-archive/vendor/foo/bar
+if [[ "$include_targets" == "true" ]]; then
+  cp package.json recursive-archive/vendor/foo/bar/baz/quux
+  cp pom.xml recursive-archive/vendor/foo/bar/
+fi
 # The UUID gives us a different directory hash every time we generate
 uuidgen > recursive-archive/vendor/foo/VERSION
 
@@ -18,6 +28,7 @@ if [[ "$1" == "--skip-archiving" ]]; then
   echo "Exiting early"
   exit 0
 fi
+
 # output the file-tree before tarring things up
 echo "un-archived directory structure: "
 tree recursive-archive
