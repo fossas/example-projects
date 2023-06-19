@@ -9,11 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bson": "4.5.1",
-    "bxslider": "^4.2.14"
-  },
-  "devDependencies": {
-    "@storybook/addon-actions": "6.3.7",
-    "@storybook/addon-docs": "6.3.7"
+    "bson": "4.5.1"
   }
 }
