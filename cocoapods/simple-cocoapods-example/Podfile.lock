@@ -1,0 +1,183 @@
+PODS:
+  - Amplitude (5.1.0)
+  - BFNavigationBarDrawer (1.0.2)
+  - Firebase/CoreOnly (6.24.0):
+    - FirebaseCore (= 6.7.0)
+  - Firebase/Crashlytics (6.24.0):
+    - Firebase/CoreOnly
+    - FirebaseCrashlytics (~> 4.1.0)
+  - FirebaseAnalyticsInterop (1.5.0)
+  - FirebaseCore (6.7.0):
+    - FirebaseCoreDiagnostics (~> 1.3)
+    - FirebaseCoreDiagnosticsInterop (~> 1.2)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GoogleUtilities/Logger (~> 6.5)
+  - FirebaseCoreDiagnostics (1.3.0):
+    - FirebaseCoreDiagnosticsInterop (~> 1.2)
+    - GoogleDataTransportCCTSupport (~> 3.1)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GoogleUtilities/Logger (~> 6.5)
+    - nanopb (~> 1.30905.0)
+  - FirebaseCoreDiagnosticsInterop (1.2.0)
+  - FirebaseCrashlytics (4.1.0):
+    - FirebaseAnalyticsInterop (~> 1.2)
+    - FirebaseCore (~> 6.6)
+    - FirebaseInstallations (~> 1.1)
+    - GoogleDataTransport (~> 6.1)
+    - GoogleDataTransportCCTSupport (~> 3.1)
+    - nanopb (~> 1.30905.0)
+    - PromisesObjC (~> 1.2)
+  - FirebaseInstallations (1.2.0):
+    - FirebaseCore (~> 6.6)
+    - GoogleUtilities/Environment (~> 6.6)
+    - GoogleUtilities/UserDefaults (~> 6.6)
+    - PromisesObjC (~> 1.2)
+  - FlatUIKit (1.6.2)
+  - GoogleDataTransport (6.1.0)
+  - GoogleDataTransportCCTSupport (3.1.0):
+    - GoogleDataTransport (~> 6.1)
+    - nanopb (~> 1.30905.0)
+  - GoogleUtilities/Environment (6.6.0):
+    - PromisesObjC (~> 1.2)
+  - GoogleUtilities/Logger (6.6.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/UserDefaults (6.6.0):
+    - GoogleUtilities/Logger
+  - GoogleWebRTC (1.1.31999)
+  - GZIP (1.0.3)
+  - iOS7Colors (2.1.0)
+  - IPDashedLineView (1.1.0)
+  - lottie-ios (3.1.1)
+  - MBProgressHUD (1.1.0)
+  - MRProgress (0.8.3):
+    - MRProgress/ActivityIndicator (= 0.8.3)
+    - MRProgress/Blur (= 0.8.3)
+    - MRProgress/Circular (= 0.8.3)
+    - MRProgress/Icons (= 0.8.3)
+    - MRProgress/NavigationBarProgress (= 0.8.3)
+    - MRProgress/Overlay (= 0.8.3)
+  - MRProgress/ActivityIndicator (0.8.3):
+    - MRProgress/Stopable
+  - MRProgress/Blur (0.8.3):
+    - MRProgress/Helper
+  - MRProgress/Circular (0.8.3):
+    - MRProgress/Helper
+    - MRProgress/ProgressBaseClass
+    - MRProgress/Stopable
+  - MRProgress/Helper (0.8.3)
+  - MRProgress/Icons (0.8.3)
+  - MRProgress/NavigationBarProgress (0.8.3):
+    - MRProgress/ProgressBaseClass
+  - MRProgress/Overlay (0.8.3):
+    - MRProgress/ActivityIndicator
+    - MRProgress/Blur
+    - MRProgress/Circular
+    - MRProgress/Helper
+    - MRProgress/Icons
+  - MRProgress/ProgressBaseClass (0.8.3)
+  - MRProgress/Stopable (0.8.3):
+    - MRProgress/Helper
+  - nanopb (1.30905.0):
+    - nanopb/decode (= 1.30905.0)
+    - nanopb/encode (= 1.30905.0)
+  - nanopb/decode (1.30905.0)
+  - nanopb/encode (1.30905.0)
+  - PromisesObjC (1.2.8)
+  - PureLayout (3.1.9)
+  - QBImagePickerController (3.4.0)
+  - RNCryptor-objc (3.0.6)
+  - THContactPicker (2.0)
+  - TOCropViewController (2.5.1)
+  - TransitionKit (2.2.1)
+  - TTTAttributedLabel (2.0.0)
+  - ZipArchive (1.4.0)
+
+DEPENDENCIES:
+  - Amplitude
+  - BFNavigationBarDrawer
+  - Firebase/Crashlytics
+  - FlatUIKit
+  - GoogleWebRTC (~> 1.1)
+  - GZIP (~> 1.0.3)
+  - iOS7Colors
+  - IPDashedLineView
+  - lottie-ios
+  - MBProgressHUD
+  - MRProgress
+  - PureLayout
+  - QBImagePickerController
+  - RNCryptor-objc (~> 3.0)
+  - THContactPicker
+  - TOCropViewController
+  - TransitionKit
+  - TTTAttributedLabel
+  - ZipArchive
+
+SPEC REPOS:
+  trunk:
+    - Amplitude
+    - BFNavigationBarDrawer
+    - Firebase
+    - FirebaseAnalyticsInterop
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCoreDiagnosticsInterop
+    - FirebaseCrashlytics
+    - FirebaseInstallations
+    - FlatUIKit
+    - GoogleDataTransport
+    - GoogleDataTransportCCTSupport
+    - GoogleUtilities
+    - GoogleWebRTC
+    - GZIP
+    - iOS7Colors
+    - IPDashedLineView
+    - lottie-ios
+    - MBProgressHUD
+    - MRProgress
+    - nanopb
+    - PromisesObjC
+    - PureLayout
+    - QBImagePickerController
+    - RNCryptor-objc
+    - THContactPicker
+    - TOCropViewController
+    - TransitionKit
+    - TTTAttributedLabel
+    - ZipArchive
+
+SPEC CHECKSUMS:
+  Amplitude: 1d3d18f82ba9852011aa7b9a741eac616d78fa82
+  BFNavigationBarDrawer: 7114305b2eb64f796aeee63029a037e30bf37a93
+  Firebase: b28e55c60efd98963cd9011fe2fac5a10c2ba124
+  FirebaseAnalyticsInterop: 3f86269c38ae41f47afeb43ebf32a001f58fcdae
+  FirebaseCore: e610482f64097b0e9f056cd97bc6b33dfabcbb6a
+  FirebaseCoreDiagnostics: 4a773a47bd83bbd5a9b1ccf1ce7caa8b2d535e67
+  FirebaseCoreDiagnosticsInterop: 296e2c5f5314500a850ad0b83e9e7c10b011a850
+  FirebaseCrashlytics: fff345f16a07f0b23cb342d8de5a42cec6de3492
+  FirebaseInstallations: 2119fb3e46b0a88bfdbf12562f855ee3252462fa
+  FlatUIKit: 1b41f0d4952ce8d970d8479ce79df54a960242c4
+  GoogleDataTransport: f6f8eba931df03ebd2232ff4645aa85f8f47b5ab
+  GoogleDataTransportCCTSupport: d70a561f7d236af529fee598835caad5e25f6d3d
+  GoogleUtilities: 39530bc0ad980530298e9c4af8549e991fd033b1
+  GoogleWebRTC: b39a78c4f5cc6b0323415b9233db03a2faa7b0f0
+  GZIP: f0863fda354e8f83316508c0a2c7bbe385e39129
+  iOS7Colors: 3737f03d6a752ee45afcc3d6b7743fb52dfab0f0
+  IPDashedLineView: 4121e77a8b3f4dc8dec50e0a153524c4e1803b21
+  lottie-ios: 43a472d22b2dd2bed292cc4010c0b4d2e66d3ba8
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MRProgress: 16de7cc9f347e8846797a770db102a323fe7ef09
+  nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
+  PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
+  PureLayout: 5fb5e5429519627d60d079ccb1eaa7265ce7cf88
+  QBImagePickerController: d54cf93db6decf26baf6ed3472f336ef35cae022
+  RNCryptor-objc: d1b228f9c02e2173df063f0617684c134aed890e
+  THContactPicker: 4345c81a407af534e5f618d495e8fb422a911c10
+  TOCropViewController: 00dc36c4e4a0f4a45efa91adbf22df8a4fae01d3
+  TransitionKit: 9ceccda4cd0cdc0a05ef85eb235e5a3292c3c250
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
+
+PODFILE CHECKSUM: d15e10e8c0288b87d81590b10d7b6504811ba374
+
+COCOAPODS: 1.11.3
