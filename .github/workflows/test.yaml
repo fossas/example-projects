@@ -1,0 +1,32 @@
+name: "Test"
+on: [pull_request]
+
+env:
+  DOCKER_BUILDKIT: 1
+
+jobs:
+  check-container-scanning-examples:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Ensure example docker images can be built
+        run: make build-images
+
+  # TODO: Add remaining project and languages 
+  check-static-analysis:
+    strategy:
+      fail-fast: true
+      matrix:
+        baseDir: [
+          './javascript/pnpm',
+          './javascript/pnpm-v6',
+          './javascript/pnpm-v6-workspace',
+        ]
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v2
+      - name: Install fossa-cli
+        run: |
+          curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install-latest.sh | bash
+      - name: fossa analyze ${{ matrix.baseDir }} -o 
+        run: fossa analyze ${{ matrix.baseDir }} -o

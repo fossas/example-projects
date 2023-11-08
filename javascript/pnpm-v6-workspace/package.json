@@ -1,0 +1,21 @@
+{
+    "name": "pnpm-v6-workspace",
+    "version": "1.0.0",
+    "scripts": {
+      "analyze": "fossa analyze -o"
+    },
+    "dependencies": {
+      "aws-sdk": "2.1148.0",
+      "colors": "git+https://github.com/Marak/colors.js.git",
+      "lodash": "https://github.com/lodash/lodash/archive/refs/heads/master.tar.gz"
+    },
+    "peerDependencies": {
+        "chalk": "5.3.0"
+    },
+    "devDependencies": {
+        "react": "18.1.0"
+    },"workspaces": [
+        "packages/*"
+      ]
+  }
+  

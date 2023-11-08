@@ -1,0 +1,12 @@
+{
+    "name": "a",
+    "version": "1.0.0",
+    "scripts": {
+      "analyze": "fossa analyze -o"
+    },
+    "dependencies": {
+      "aws-sdk": "1.0.0",
+      "commander": "9.2.0"
+    }
+  }
+  
