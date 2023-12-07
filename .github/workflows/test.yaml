@@ -21,6 +21,8 @@ jobs:
           './javascript/pnpm',
           './javascript/pnpm-v6',
           './javascript/pnpm-v6-workspace',
+          './reachability/java/vulnerable-function-used',
+          './reachability/java/vulnerable-function-not-used',
         ]
     runs-on: ubuntu-latest
     steps: 
@@ -28,5 +30,10 @@ jobs:
       - name: Install fossa-cli
         run: |
           curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install-latest.sh | bash
+      - uses: actions/setup-java@v3
+        if: ${{ startsWith(matrix.baseDir, './reachability/java') }}
+        with:
+          java-version: '17'
+          distribution: 'temurin'
       - name: fossa analyze ${{ matrix.baseDir }} -o 
         run: fossa analyze ${{ matrix.baseDir }} -o
