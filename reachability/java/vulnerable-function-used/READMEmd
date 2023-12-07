@@ -1,0 +1,11 @@
+## Vulnerable Example
+
+- CVE: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10683
+
+## Usage
+
+```bash
+# ./gradlew run --args="<XML-URL>"
+
+./gradlew run --args="https://raw.githubusercontent.com/apache/dubbo/5554706256c9daf550f36858e5bc3d17f3ec6143/pom.xml"
+```
