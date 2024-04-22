@@ -1,0 +1,65 @@
+version: 3
+
+server: https://app.fossa.com
+apiKey: 25872c96b6ff8cc678b116c3b3d2ef96
+
+
+# project:
+#   id: custom+39599/git@github.com:JeffreyHuynh1/example-maven-project.git
+#   name: git@github.com:JeffreyHuynh1/example-project-fossa.git
+
+# revision:
+#   commit: "12345"
+#   branch: master
+
+# vendoredDependencies:
+#   forceRescans: false
+#   scanMethod: CLILicenseScan
+#   licenseScanPathFilters:
+#     only:
+#       - "**/*.rb"
+#     exclude:
+#       - ".git/**"
+#       - "test/**/*.rb"
+
+targets:
+  exclude:
+    - type: maven
+      path: ./
+      target: 'com.fossa:lib'
+    - type: poetry
+      path: with-poetry/
+#   only:
+#     - type: maven
+#   exclude:
+#     - type: bundler
+
+#maven:
+#   scope-only:
+#     - provided
+#
+#  scope-exclude:
+#    - provided
+#    - system
+#    - test
+
+# paths:
+#   only:
+#     - ./vendor/django
+#     - ./test
+#   exclude:
+#     - ./vendor/django/test
+
+# experimental:
+#   gradle:
+#     configurations-only:
+#       - example-1-config-to-include
+#       - example-2-config-to-include
+
+# customLicenseSearch:
+#   - matchCriteria: "[Pp]roprietary [Ll]icense"
+#     name: "Proprietary License"
+
+# experimentalKeywordSearch:
+#   - matchCriteria: "[Pp]roprietary and [Cc]onfidential"
+#     name: "Proprietary and Confidential match"

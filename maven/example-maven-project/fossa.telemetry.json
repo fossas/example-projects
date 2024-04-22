@@ -1,0 +1,40 @@
+{
+  "cliCIEnvironment": null,
+  "cliCommandArgs": [
+    "fossa",
+    "list-targets",
+    "--debug"
+  ],
+  "cliEnvironment": "prod",
+  "cliExitedFatally": false,
+  "cliResolvedConfig": {
+    "cmdConfig": {
+      "baseDir": {
+        "unBaseDir": "/Users/jeff/Desktop/example-projects/maven/example-maven-project/"
+      },
+      "experimental": {
+        "allowedGradleConfigs": null,
+        "useV3GoResolver": "GoModulesBasedTactic"
+      }
+    },
+    "cmdName": "list-targets"
+  },
+  "cliStartedAt": "2023-11-16T22:41:29.208891Z",
+  "cliSystemInfo": {
+    "systemCapabilities": 12,
+    "systemDistroInfo": null,
+    "systemInfoArch": "x86_64",
+    "systemInfoOs": "darwin",
+    "systemLddVersion": null,
+    "systemProcessors": 12,
+    "systemUname": {
+      "Right": "Darwin 22.5.0 Darwin Kernel Version 22.5.0: Mon Apr 24 20:53:19 PDT 2023; root:xnu-8796.121.2~5/RELEASE_ARM64_T6020 x86_64\n"
+    }
+  },
+  "cliTelLogs": [],
+  "cliTelemetryId": "6d83312b-da04-46ac-9add-1f632237ac0f",
+  "cliTimedDurations": [],
+  "cliTotalDurationInSec": 0.101214,
+  "cliUsageCounter": {},
+  "cliVersion": "v3.8.9"
+}

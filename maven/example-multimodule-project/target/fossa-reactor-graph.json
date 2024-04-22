@@ -1,0 +1,29 @@
+{
+  "graphName" : "G",
+  "artifacts" : [ {
+    "id" : "com.fossa:lib",
+    "numericId" : 1,
+    "artifactId" : "lib"
+  }, {
+    "id" : "com.fossa:exec",
+    "numericId" : 2,
+    "artifactId" : "exec"
+  }, {
+    "id" : "com.fossa:example-multimodule-project",
+    "numericId" : 3,
+    "artifactId" : "example-multimodule-project"
+  } ],
+  "dependencies" : [ {
+    "from" : "com.fossa:lib",
+    "to" : "com.fossa:exec",
+    "numericFrom" : 0,
+    "numericTo" : 1,
+    "resolution" : "PARENT"
+  }, {
+    "from" : "com.fossa:example-multimodule-project",
+    "to" : "com.fossa:lib",
+    "numericFrom" : 2,
+    "numericTo" : 0,
+    "resolution" : "PARENT"
+  } ]
+}
