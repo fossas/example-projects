@@ -17,3 +17,6 @@ elixir/mix/hello_world/tmp
 # javascript
 *.log
 *node_modules/
+
+# reachability
+reachability/maven/vuln-function-used/target
